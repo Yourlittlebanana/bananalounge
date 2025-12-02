@@ -21,7 +21,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "https://api.trello.com/1/members/purpurr11@gmail.com/boards?key=11b3da7c77934b1f87b09474bca1b11b&token=ATTA1e3da76fa017c1f5cd27a96a09c3f2d846235f833ddce283ec88e4a519eb674eD54CE749&fields=id",
+									"raw": "https://api.trello.com/1/members/purpurr11@gmail.com/boards?key={{key}}&token={{token}}",
 									"protocol": "https",
 									"host": [
 										"api",
@@ -37,16 +37,16 @@
 									"query": [
 										{
 											"key": "key",
-											"value": "11b3da7c77934b1f87b09474bca1b11b"
+											"value": "{{key}}"
 										},
 										{
 											"key": "token",
-											"value": "ATTA1e3da76fa017c1f5cd27a96a09c3f2d846235f833ddce283ec88e4a519eb674eD54CE749"
+											"value": "{{token}}"
 										},
 										{
 											"key": "fields",
 											"value": "id",
-											"type": "text"
+											"disabled": true
 										}
 									]
 								}
@@ -63,7 +63,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "https://api.trello.com/1/boards/692709f4fd60e0ba00a6cd64?key=11b3da7c77934b1f87b09474bca1b11b&token=ATTA1e3da76fa017c1f5cd27a96a09c3f2d846235f833ddce283ec88e4a519eb674eD54CE749",
+									"raw": "https://api.trello.com/1/boards/{{board_id}}?key={{key}}&token={{token}}",
 									"protocol": "https",
 									"host": [
 										"api",
@@ -73,16 +73,16 @@
 									"path": [
 										"1",
 										"boards",
-										"692709f4fd60e0ba00a6cd64"
+										"{{board_id}}"
 									],
 									"query": [
 										{
 											"key": "key",
-											"value": "11b3da7c77934b1f87b09474bca1b11b"
+											"value": "{{key}}"
 										},
 										{
 											"key": "token",
-											"value": "ATTA1e3da76fa017c1f5cd27a96a09c3f2d846235f833ddce283ec88e4a519eb674eD54CE749"
+											"value": "{{token}}"
 										}
 									]
 								}
@@ -99,11 +99,44 @@
 							"name": "get one card",
 							"id": "50381953-f14bc119-0be6-45b8-8eac-0cca26c62170",
 							"protocolProfileBehavior": {
-								"disableBodyPruning": true
+								"disableBodyPruning": true,
+								"disabledSystemHeaders": {
+									"accept": true
+								}
 							},
 							"request": {
 								"method": "GET",
-								"header": [],
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://api.trello.com/1/cards/PMwTe42z?key={{key}}&token={{token}}",
+									"protocol": "https",
+									"host": [
+										"api",
+										"trello",
+										"com"
+									],
+									"path": [
+										"1",
+										"cards",
+										"PMwTe42z"
+									],
+									"query": [
+										{
+											"key": "key",
+											"value": "{{key}}"
+										},
+										{
+											"key": "token",
+											"value": "{{token}}"
+										}
+									]
+								},
 								"description": "id карточки можно взять из url на борде [https://trello.com/c/<b>IImrxKKQ</b>/9-test-card<br>](https://trello.com/c/IImrxKKQ/9-test-card)либо из json по запросу get all board cards \"shortLink\": \"PMwTe42z\" где значение = card_id"
 							},
 							"response": []
