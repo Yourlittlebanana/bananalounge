@@ -104,7 +104,7 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"description": "id карточки можно взять из url на борде [https://trello.com/c/<b>IImrxKKQ</b>/9-test-card<br>](https://trello.com/c/IImrxKKQ/9-test-card)либо из json \"shortLink\": \"PMwTe42z\" где значение = card_id"
+								"description": "id карточки можно взять из url на борде [https://trello.com/c/<b>IImrxKKQ</b>/9-test-card<br>](https://trello.com/c/IImrxKKQ/9-test-card)либо из json по запросу get all board cards \"shortLink\": \"PMwTe42z\" где значение = card_id"
 							},
 							"response": []
 						},
