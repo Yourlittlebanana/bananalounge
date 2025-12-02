@@ -1,0 +1,130 @@
+{
+	"info": {
+		"_postman_id": "50381953-2cc9e968-88be-4903-b306-aaf0e98f686e",
+		"name": "Trello requests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get",
+			"item": [
+				{
+					"name": "Boards",
+					"item": [
+						{
+							"name": "get boards",
+							"id": "50381953-3085669b-bfe8-4306-9298-853c0d6409c1",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://api.trello.com/1/members/purpurr11@gmail.com/boards?key=11b3da7c77934b1f87b09474bca1b11b&token=ATTA1e3da76fa017c1f5cd27a96a09c3f2d846235f833ddce283ec88e4a519eb674eD54CE749&fields=id",
+									"protocol": "https",
+									"host": [
+										"api",
+										"trello",
+										"com"
+									],
+									"path": [
+										"1",
+										"members",
+										"purpurr11@gmail.com",
+										"boards"
+									],
+									"query": [
+										{
+											"key": "key",
+											"value": "11b3da7c77934b1f87b09474bca1b11b"
+										},
+										{
+											"key": "token",
+											"value": "ATTA1e3da76fa017c1f5cd27a96a09c3f2d846235f833ddce283ec88e4a519eb674eD54CE749"
+										},
+										{
+											"key": "fields",
+											"value": "id",
+											"type": "text"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get one board",
+							"id": "50381953-c81bf696-a115-4df1-909b-af9a3ffa44ec",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://api.trello.com/1/boards/692709f4fd60e0ba00a6cd64?key=11b3da7c77934b1f87b09474bca1b11b&token=ATTA1e3da76fa017c1f5cd27a96a09c3f2d846235f833ddce283ec88e4a519eb674eD54CE749",
+									"protocol": "https",
+									"host": [
+										"api",
+										"trello",
+										"com"
+									],
+									"path": [
+										"1",
+										"boards",
+										"692709f4fd60e0ba00a6cd64"
+									],
+									"query": [
+										{
+											"key": "key",
+											"value": "11b3da7c77934b1f87b09474bca1b11b"
+										},
+										{
+											"key": "token",
+											"value": "ATTA1e3da76fa017c1f5cd27a96a09c3f2d846235f833ddce283ec88e4a519eb674eD54CE749"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"id": "50381953-9e90ff06-0712-4ea2-b43f-cec65593359f"
+				},
+				{
+					"name": "Cards",
+					"item": [
+						{
+							"name": "get one card",
+							"id": "50381953-f14bc119-0be6-45b8-8eac-0cca26c62170",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"description": "id карточки можно взять из url на борде [https://trello.com/c/<b>IImrxKKQ</b>/9-test-card<br>](https://trello.com/c/IImrxKKQ/9-test-card)либо из json \"shortLink\": \"PMwTe42z\" где значение = card_id"
+							},
+							"response": []
+						},
+						{
+							"name": "get all board cards",
+							"id": "50381953-18d994d3-7ac8-46a6-810a-8fbc5351e2e1",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						}
+					],
+					"id": "50381953-ef2f7c74-c938-46c7-9638-b8167e2c1812"
+				}
+			],
+			"id": "50381953-e258662f-9925-486c-ba80-c0ae69566e66"
+		}
+	]
+}
