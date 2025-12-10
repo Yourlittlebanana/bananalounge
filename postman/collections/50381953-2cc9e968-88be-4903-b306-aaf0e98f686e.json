@@ -91,13 +91,94 @@
 						},
 						{
 							"name": "create board",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "9c5097a0-20b1-4d4d-93ac-9968bffed6e3",
+										"exec": [
+											"function randomText(length) {",
+											"    const chars = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';",
+											"    let res = '';",
+											"    for (let i = 0; i < length; i++) {",
+											"        res += chars.charAt(Math.floor(Math.random() * chars.length));",
+											"    }",
+											"    return res;",
+											"}",
+											"",
+											"pm.variables.set(\"boardName\", randomText(10)); // согласно документации, максимальная длина имени доски - 16384 символов, минимальная - 1 символ.",
+											""
+										],
+										"type": "text/javascript",
+										"packages": {},
+										"requests": {}
+									}
+								},
+								{
+									"listen": "test",
+									"script": {
+										"id": "859596f3-2cf4-4503-9be1-d1dd056cbfa6",
+										"exec": [
+											"let jsonData;",
+											"pm.test(\"Response is a valid JSON\", function () {",
+											"    jsonData = pm.response.json();",
+											"    pm.expect(jsonData).to.be.an(\"object\");",
+											"});",
+											"",
+											"pm.test (\"check status code\", function() {",
+											"    pm.response.to.have.status(200)",
+											"});",
+											"",
+											"pm.test(\"Response time < 1000 ms)\", function () {",
+											"    pm.expect(pm.response.responseTime).to.be.below(1000);",
+											"});",
+											"",
+											"pm.test(\"Board id is present and not empty\", function () {",
+											"    pm.expect(jsonData).to.have.property(\"id\");",
+											"    pm.expect(jsonData.id).to.be.a(\"string\").and.not.empty;",
+											"",
+											"    pm.environment.set(\"boardId\", jsonData.id);",
+											"});",
+											""
+										],
+										"type": "text/javascript",
+										"packages": {},
+										"requests": {}
+									}
+								}
+							],
 							"id": "50381953-31eba95a-8f30-4d5a-bb37-53a1a88f4caf",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
 							"request": {
-								"method": "GET",
-								"header": []
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/1/boards/?name={{boardName}}&key={{key}}&token={{token}}",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"1",
+										"boards",
+										""
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "{{boardName}}"
+										},
+										{
+											"key": "key",
+											"value": "{{key}}"
+										},
+										{
+											"key": "token",
+											"value": "{{token}}"
+										}
+									]
+								}
 							},
 							"response": []
 						}
@@ -195,6 +276,18 @@
 				}
 			],
 			"id": "50381953-e258662f-9925-486c-ba80-c0ae69566e66"
+		},
+		{
+			"name": "New Request",
+			"id": "50381953-58cfc202-de77-4997-a5ab-6ac91c9ec14a",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
 		}
 	]
 }
