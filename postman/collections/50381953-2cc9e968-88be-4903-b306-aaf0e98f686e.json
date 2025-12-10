@@ -278,16 +278,9 @@
 			"id": "50381953-e258662f-9925-486c-ba80-c0ae69566e66"
 		},
 		{
-			"name": "New Request",
-			"id": "50381953-58cfc202-de77-4997-a5ab-6ac91c9ec14a",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": []
-			},
-			"response": []
+			"name": "New Folder",
+			"item": [],
+			"id": "50381953-0aad1094-2195-48b7-9dc4-17cd401338e8"
 		}
 	]
 }
