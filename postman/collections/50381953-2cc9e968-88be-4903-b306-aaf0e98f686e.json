@@ -90,7 +90,7 @@
 							"response": []
 						},
 						{
-							"name": "New Request",
+							"name": "create board",
 							"id": "50381953-31eba95a-8f30-4d5a-bb37-53a1a88f4caf",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
