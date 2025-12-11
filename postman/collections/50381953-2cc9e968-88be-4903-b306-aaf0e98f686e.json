@@ -13,7 +13,86 @@
 					"item": [
 						{
 							"name": "Negative",
-							"item": [],
+							"item": [
+								{
+									"name": "get boards Copy",
+									"id": "50381953-044af3a7-4a28-4f42-bb08-90f683704258",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "https://api.trello.com/1/members/purpurr11@gmail.com/boards?key={{key}}&token={{token}}",
+											"protocol": "https",
+											"host": [
+												"api",
+												"trello",
+												"com"
+											],
+											"path": [
+												"1",
+												"members",
+												"purpurr11@gmail.com",
+												"boards"
+											],
+											"query": [
+												{
+													"key": "key",
+													"value": "{{key}}"
+												},
+												{
+													"key": "token",
+													"value": "{{token}}"
+												},
+												{
+													"key": "fields",
+													"value": "id",
+													"disabled": true
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "get one board Copy",
+									"id": "50381953-3034a45c-4e4a-4861-8436-cef1178e7376",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "https://api.trello.com/1/boards/{{board_id}}?key={{key}}&token={{token}}",
+											"protocol": "https",
+											"host": [
+												"api",
+												"trello",
+												"com"
+											],
+											"path": [
+												"1",
+												"boards",
+												"{{board_id}}"
+											],
+											"query": [
+												{
+													"key": "key",
+													"value": "{{key}}"
+												},
+												{
+													"key": "token",
+													"value": "{{token}}"
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							],
 							"id": "50381953-ae55e2d8-7006-4a64-8f71-398232040343"
 						},
 						{
