@@ -15,7 +15,7 @@
 							"name": "Negative",
 							"item": [
 								{
-									"name": "get boards Copy",
+									"name": "get boards (invalid token)",
 									"id": "50381953-044af3a7-4a28-4f42-bb08-90f683704258",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
