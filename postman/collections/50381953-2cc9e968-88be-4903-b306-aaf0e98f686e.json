@@ -374,7 +374,7 @@
 					"name": "List",
 					"item": [
 						{
-							"name": "New Request",
+							"name": "get list",
 							"id": "50381953-c0606be9-27e3-4eed-a2da-9f68a8c6a4d6",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
