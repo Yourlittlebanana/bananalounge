@@ -369,6 +369,18 @@
 						}
 					],
 					"id": "50381953-ef2f7c74-c938-46c7-9638-b8167e2c1812"
+				},
+				{
+					"name": "New Request",
+					"id": "50381953-cff8b268-8ceb-43cc-b6c1-1810a47a5ac0",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
 				}
 			],
 			"id": "50381953-e258662f-9925-486c-ba80-c0ae69566e66"
@@ -589,8 +601,33 @@
 						"disableBodyPruning": true
 					},
 					"request": {
-						"method": "GET",
-						"header": []
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://{{host}}/1/cards?idList=5abbe4b7ddc1b351ef961414&key={{key}}&token={{token}}",
+							"protocol": "https",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"1",
+								"cards"
+							],
+							"query": [
+								{
+									"key": "idList",
+									"value": "5abbe4b7ddc1b351ef961414"
+								},
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
 					},
 					"response": []
 				}
