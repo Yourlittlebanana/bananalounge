@@ -371,16 +371,22 @@
 					"id": "50381953-ef2f7c74-c938-46c7-9638-b8167e2c1812"
 				},
 				{
-					"name": "New Request",
-					"id": "50381953-cff8b268-8ceb-43cc-b6c1-1810a47a5ac0",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": []
-					},
-					"response": []
+					"name": "List",
+					"item": [
+						{
+							"name": "New Request",
+							"id": "50381953-c0606be9-27e3-4eed-a2da-9f68a8c6a4d6",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						}
+					],
+					"id": "50381953-ecfab5e9-d07c-424d-ac98-9200db8cbc46"
 				}
 			],
 			"id": "50381953-e258662f-9925-486c-ba80-c0ae69566e66"
