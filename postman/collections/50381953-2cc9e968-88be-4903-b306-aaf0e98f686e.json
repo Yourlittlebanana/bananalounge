@@ -199,7 +199,7 @@
 							"name": "Negative",
 							"item": [
 								{
-									"name": "get one card Copy",
+									"name": "get one card (invalid card id)",
 									"id": "50381953-7b42e749-837c-403b-bc64-87344e8a48be",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true,
