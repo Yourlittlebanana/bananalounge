@@ -12,6 +12,11 @@
 					"name": "Boards",
 					"item": [
 						{
+							"name": "New Folder",
+							"item": [],
+							"id": "50381953-ae55e2d8-7006-4a64-8f71-398232040343"
+						},
+						{
 							"name": "get boards",
 							"id": "50381953-3085669b-bfe8-4306-9298-853c0d6409c1",
 							"protocolProfileBehavior": {
