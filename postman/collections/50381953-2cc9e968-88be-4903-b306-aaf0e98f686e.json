@@ -197,7 +197,20 @@
 					"item": [
 						{
 							"name": "Negative",
-							"item": [],
+							"item": [
+								{
+									"name": "New Request",
+									"id": "50381953-72e1e252-64d2-40b5-bd60-4b6406f7538b",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": []
+									},
+									"response": []
+								}
+							],
 							"id": "50381953-fb1356b2-a51b-4544-bdcc-4859846276d5"
 						},
 						{
