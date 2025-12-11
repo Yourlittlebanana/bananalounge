@@ -16,6 +16,22 @@
 							"item": [
 								{
 									"name": "get boards (invalid token)",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"id": "31d8e453-f30e-481a-8372-8c9c5582fbeb",
+												"exec": [
+													"pm.test (\"check status code\", function() {",
+													"    pm.response.to.have.status(401)",
+													"});"
+												],
+												"type": "text/javascript",
+												"packages": {},
+												"requests": {}
+											}
+										}
+									],
 									"id": "50381953-044af3a7-4a28-4f42-bb08-90f683704258",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
@@ -24,7 +40,7 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "https://api.trello.com/1/members/purpurr11@gmail.com/boards?key={{key}}&token={{token}}",
+											"raw": "https://api.trello.com/1/members/purpurr11@gmail.com/boards?key={{key}}&token=ATTA1e3da76fa017c1f5cd27a96a09c3f2d846235f833ddce283ec88e4a519eb674eD54CE740o",
 											"protocol": "https",
 											"host": [
 												"api",
@@ -44,7 +60,7 @@
 												},
 												{
 													"key": "token",
-													"value": "{{token}}"
+													"value": "ATTA1e3da76fa017c1f5cd27a96a09c3f2d846235f833ddce283ec88e4a519eb674eD54CE740o"
 												},
 												{
 													"key": "fields",
