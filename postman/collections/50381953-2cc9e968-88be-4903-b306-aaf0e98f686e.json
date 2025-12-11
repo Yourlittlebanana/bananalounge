@@ -196,7 +196,7 @@
 					"name": "Cards",
 					"item": [
 						{
-							"name": "New Folder",
+							"name": "Negative",
 							"item": [],
 							"id": "50381953-fb1356b2-a51b-4544-bdcc-4859846276d5"
 						},
@@ -292,6 +292,11 @@
 		{
 			"name": "Post",
 			"item": [
+				{
+					"name": "Negative",
+					"item": [],
+					"id": "50381953-871ee0c0-8f3b-4791-9d89-be2ea837b024"
+				},
 				{
 					"name": "create board",
 					"event": [
