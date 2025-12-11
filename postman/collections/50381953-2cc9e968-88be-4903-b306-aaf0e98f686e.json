@@ -535,27 +535,13 @@
 											"});",
 											"",
 											"pm.test (\"check status code\", function() {",
-											"    pm.response.to.have.status(200)",
+											"    pm.response.to.have.status(400)",
 											"});",
 											"",
 											"pm.test(\"Response time < 1000 ms)\", function () {",
 											"    pm.expect(pm.response.responseTime).to.be.below(1000);",
 											"});",
-											"",
-											"pm.test(\"Board id is present and not empty\", function () {",
-											"    pm.expect(jsonData).to.have.property(\"id\");",
-											"    pm.expect(jsonData.id).to.be.a(\"string\").and.not.empty;",
-											"});",
-											"",
-											"pm.test(\"Board name equals requested name\", function () {",
-											"    // Берём name из query-параметров текущего запроса",
-											"    const requestedName = pm.request.url.query",
-											"        .find(q => q.key === \"name\")?.value;",
-											"",
-											"    pm.expect(requestedName).to.be.a(\"string\").and.not.empty;",
-											"    pm.expect(jsonData).to.have.property(\"name\");",
-											"    pm.expect(jsonData.name).to.eql(requestedName);",
-											"});"
+											""
 										],
 										"type": "text/javascript",
 										"packages": {},
@@ -571,7 +557,7 @@
 								"method": "POST",
 								"header": [],
 								"url": {
-									"raw": "{{host}}/1/boards/?name={{boardName}}&key={{key}}&token={{token}}",
+									"raw": "{{host}}/1/boards/?name=&key={{key}}&token={{token}}",
 									"host": [
 										"{{host}}"
 									],
@@ -583,7 +569,7 @@
 									"query": [
 										{
 											"key": "name",
-											"value": "{{boardName}}"
+											"value": ""
 										},
 										{
 											"key": "key",
