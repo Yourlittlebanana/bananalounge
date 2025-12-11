@@ -199,14 +199,48 @@
 							"name": "Negative",
 							"item": [
 								{
-									"name": "New Request",
-									"id": "50381953-72e1e252-64d2-40b5-bd60-4b6406f7538b",
+									"name": "get one card Copy",
+									"id": "50381953-7b42e749-837c-403b-bc64-87344e8a48be",
 									"protocolProfileBehavior": {
-										"disableBodyPruning": true
+										"disableBodyPruning": true,
+										"disabledSystemHeaders": {
+											"accept": true
+										}
 									},
 									"request": {
 										"method": "GET",
-										"header": []
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "https://api.trello.com/1/cards/PMwTe42z?key={{key}}&token={{token}}",
+											"protocol": "https",
+											"host": [
+												"api",
+												"trello",
+												"com"
+											],
+											"path": [
+												"1",
+												"cards",
+												"PMwTe42z"
+											],
+											"query": [
+												{
+													"key": "key",
+													"value": "{{key}}"
+												},
+												{
+													"key": "token",
+													"value": "{{token}}"
+												}
+											]
+										},
+										"description": "id карточки можно взять из url на борде [https://trello.com/c/<b>IImrxKKQ</b>/9-test-card<br>](https://trello.com/c/IImrxKKQ/9-test-card)либо из json по запросу get all board cards \"shortLink\": \"PMwTe42z\" где значение = card_id"
 									},
 									"response": []
 								}
@@ -262,6 +296,43 @@
 						{
 							"name": "get all board cards",
 							"id": "50381953-18d994d3-7ac8-46a6-810a-8fbc5351e2e1",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://api.trello.com/1/boards/{{board_id}}/cards?key={{key}}&token={{token}}",
+									"protocol": "https",
+									"host": [
+										"api",
+										"trello",
+										"com"
+									],
+									"path": [
+										"1",
+										"boards",
+										"{{board_id}}",
+										"cards"
+									],
+									"query": [
+										{
+											"key": "key",
+											"value": "{{key}}"
+										},
+										{
+											"key": "token",
+											"value": "{{token}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get all board cards Copy",
+							"id": "50381953-69923e76-c5b1-401d-b8bd-59adabcbe515",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
