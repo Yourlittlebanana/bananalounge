@@ -73,7 +73,7 @@
 									"response": []
 								},
 								{
-									"name": "get one board Copy",
+									"name": "get one board (invalid board id)",
 									"id": "50381953-3034a45c-4e4a-4861-8436-cef1178e7376",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
