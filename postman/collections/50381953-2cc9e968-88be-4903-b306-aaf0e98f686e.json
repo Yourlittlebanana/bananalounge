@@ -196,6 +196,11 @@
 					"name": "Cards",
 					"item": [
 						{
+							"name": "New Folder",
+							"item": [],
+							"id": "50381953-fb1356b2-a51b-4544-bdcc-4859846276d5"
+						},
+						{
 							"name": "get one card",
 							"id": "50381953-f14bc119-0be6-45b8-8eac-0cca26c62170",
 							"protocolProfileBehavior": {
