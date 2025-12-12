@@ -499,7 +499,7 @@
 					"name": "Negative",
 					"item": [
 						{
-							"name": "create board Copy",
+							"name": "create board (invalid name)",
 							"event": [
 								{
 									"listen": "prerequest",
