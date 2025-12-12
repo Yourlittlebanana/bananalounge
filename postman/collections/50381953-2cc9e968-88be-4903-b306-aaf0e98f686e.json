@@ -346,7 +346,7 @@
 									"response": []
 								},
 								{
-									"name": "get all board cards Copy",
+									"name": "get all board cards (invalid card id)",
 									"id": "50381953-69923e76-c5b1-401d-b8bd-59adabcbe515",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
