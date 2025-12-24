@@ -817,8 +817,21 @@
 			"id": "50381953-0aad1094-2195-48b7-9dc4-17cd401338e8"
 		},
 		{
-			"name": "New Folder",
-			"item": [],
+			"name": "Put",
+			"item": [
+				{
+					"name": "New Request",
+					"id": "50381953-d7c6e3c1-ecbf-4495-9632-ab86241f095a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			],
 			"id": "50381953-be78e43e-c7fd-432d-8f0f-5af42f71591c"
 		}
 	]
