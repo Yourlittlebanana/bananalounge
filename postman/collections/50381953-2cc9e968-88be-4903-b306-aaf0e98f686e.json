@@ -664,8 +664,35 @@
 								"disableBodyPruning": true
 							},
 							"request": {
-								"method": "GET",
-								"header": []
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "https://api.trello.com/1/cards?idList=693aca75b5321805d4a63a7800&key={{key}}&token={{token}}",
+									"protocol": "https",
+									"host": [
+										"api",
+										"trello",
+										"com"
+									],
+									"path": [
+										"1",
+										"cards"
+									],
+									"query": [
+										{
+											"key": "idList",
+											"value": "693aca75b5321805d4a63a7800"
+										},
+										{
+											"key": "key",
+											"value": "{{key}}"
+										},
+										{
+											"key": "token",
+											"value": "{{token}}"
+										}
+									]
+								}
 							},
 							"response": []
 						}
