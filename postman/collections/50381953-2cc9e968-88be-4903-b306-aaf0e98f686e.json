@@ -847,7 +847,7 @@
 			"name": "Put",
 			"item": [
 				{
-					"name": "New Request",
+					"name": "update card",
 					"id": "50381953-d7c6e3c1-ecbf-4495-9632-ab86241f095a",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
