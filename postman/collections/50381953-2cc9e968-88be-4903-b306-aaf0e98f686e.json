@@ -658,7 +658,7 @@
 							"response": []
 						},
 						{
-							"name": "New Request",
+							"name": "create new card invalid",
 							"id": "50381953-e866f67a-cfac-4808-a1aa-06703ad3bc1c",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
