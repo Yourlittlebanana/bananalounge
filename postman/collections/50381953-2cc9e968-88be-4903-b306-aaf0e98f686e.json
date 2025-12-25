@@ -705,7 +705,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "002a5538-2366-4334-919c-45aa88676085",
+								"id": "4362eb14-701b-44f2-a403-4c8f2f7db5d8",
 								"exec": [
 									"function randomText(length) {",
 									"    const chars = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';",
@@ -716,7 +716,7 @@
 									"    return res;",
 									"}",
 									"",
-									"pm.variables.set(\"boardName\", randomText(3)); // согласно документации, максимальная длина имени доски - 16384 символов, минимальная - 1 символ.",
+									"pm.variables.set(\"boardName\", randomText(4)); // согласно документации, максимальная длина имени доски - 16384 символов, минимальная - 1 символ.",
 									""
 								],
 								"type": "text/javascript",
@@ -727,7 +727,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "30c8868a-cc45-4299-9956-efd6a273c63d",
+								"id": "3b3416ef-39b0-454c-b2c1-939a8eaf16ed",
 								"exec": [
 									"let jsonData;",
 									"pm.test(\"Response is a valid JSON\", function () {",
@@ -805,18 +805,52 @@
 				},
 				{
 					"name": "create new card",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "9ca4da4f-1080-4ec9-9bd4-d43a57e8d776",
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
+							}
+						}
+					],
 					"id": "50381953-f52eb779-1ff0-4f10-987e-ea30191939b7",
 					"protocolProfileBehavior": {
-						"disableBodyPruning": true
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {
+							"accept": true
+						}
 					},
 					"request": {
 						"method": "POST",
-						"header": [],
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"{{$randomProductName}}\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
 						"url": {
-							"raw": "https://{{host}}/1/cards?idList=5abbe4b7ddc1b351ef961414&key={{key}}&token={{token}}",
+							"raw": "https://api.trello.com/1/cards?idList=693aca75b5321805d4a63a78&key={{key}}&token={{token}}&=",
 							"protocol": "https",
 							"host": [
-								"{{host}}"
+								"api",
+								"trello",
+								"com"
 							],
 							"path": [
 								"1",
@@ -825,7 +859,7 @@
 							"query": [
 								{
 									"key": "idList",
-									"value": "5abbe4b7ddc1b351ef961414"
+									"value": "693aca75b5321805d4a63a78"
 								},
 								{
 									"key": "key",
@@ -834,6 +868,10 @@
 								{
 									"key": "token",
 									"value": "{{token}}"
+								},
+								{
+									"key": "",
+									"value": ""
 								}
 							]
 						}
