@@ -1671,14 +1671,38 @@
 					"response": []
 				},
 				{
-					"name": "New Request",
+					"name": "Delete card",
 					"id": "50381953-66c313e9-2289-4da6-a3c8-1321b666fe8c",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
 					"request": {
-						"method": "GET",
-						"header": []
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://api.trello.com/1/cards/694d64792d3d84ce87a7b818?key={{key}}&token={{token}}",
+							"protocol": "https",
+							"host": [
+								"api",
+								"trello",
+								"com"
+							],
+							"path": [
+								"1",
+								"cards",
+								"694d64792d3d84ce87a7b818"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
 					},
 					"response": []
 				}
