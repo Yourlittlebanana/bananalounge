@@ -917,7 +917,20 @@
 		},
 		{
 			"name": "Delete",
-			"item": [],
+			"item": [
+				{
+					"name": "New Request",
+					"id": "50381953-194a5b9e-5e28-4317-882e-585c2b1d369d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			],
 			"id": "50381953-a5f63cec-bf2f-4893-a662-6374e7701b2f"
 		}
 	]
