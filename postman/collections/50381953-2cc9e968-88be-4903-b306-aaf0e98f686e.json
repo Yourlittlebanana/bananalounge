@@ -1635,7 +1635,7 @@
 			"name": "Delete",
 			"item": [
 				{
-					"name": "New Request",
+					"name": "Detele board",
 					"id": "50381953-194a5b9e-5e28-4317-882e-585c2b1d369d",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -1644,10 +1644,12 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "https://{{host}}/1/boards/{{board_id}}?key={{key}}&token={{token}}",
+							"raw": "https://api.trello.com/1/boards/{{board_id}}?key={{key}}&token={{token}}",
 							"protocol": "https",
 							"host": [
-								"{{host}}"
+								"api",
+								"trello",
+								"com"
 							],
 							"path": [
 								"1",
