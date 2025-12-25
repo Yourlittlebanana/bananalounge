@@ -847,6 +847,11 @@
 			"name": "Put",
 			"item": [
 				{
+					"name": "New Folder",
+					"item": [],
+					"id": "50381953-42b9757a-ec7f-4d1d-806a-1c172dd16937"
+				},
+				{
 					"name": "update card",
 					"id": "50381953-d7c6e3c1-ecbf-4495-9632-ab86241f095a",
 					"protocolProfileBehavior": {
