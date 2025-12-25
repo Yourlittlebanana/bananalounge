@@ -862,7 +862,7 @@
 							"response": []
 						},
 						{
-							"name": "update a board Copy",
+							"name": "update a board (invalid board Id)",
 							"id": "50381953-83d9c700-16a3-48b2-8adf-12c9948532d6",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
