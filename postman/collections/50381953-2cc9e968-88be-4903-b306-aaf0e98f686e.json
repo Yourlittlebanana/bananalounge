@@ -862,7 +862,7 @@
 							"response": []
 						},
 						{
-							"name": "update card (invalid boardId) Copy",
+							"name": "update card (invalid token)",
 							"id": "50381953-b9a37607-f3c7-4d38-ad13-d63b1c92fb30",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
