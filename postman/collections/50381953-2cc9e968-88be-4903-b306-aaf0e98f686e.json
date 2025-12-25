@@ -889,37 +889,163 @@
 					"item": [
 						{
 							"name": "update card (invalid boardId)",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "b191ce16-cbac-45ee-8bc8-f82ce9d8de85",
+										"exec": [
+											"pm.test(\"check status code\", function() {",
+											"    pm.response.to.have.status(400);",
+											"});"
+										],
+										"type": "text/javascript",
+										"packages": {},
+										"requests": {}
+									}
+								}
+							],
 							"id": "50381953-a67e563a-cac0-4023-b389-9b9307c55392",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
 							"request": {
-								"method": "GET",
-								"header": []
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "https://api.trello.com/1/cards/693c3817c219a2d4a24eac38?key={{key}}&token={{token}}",
+									"protocol": "https",
+									"host": [
+										"api",
+										"trello",
+										"com"
+									],
+									"path": [
+										"1",
+										"cards",
+										"693c3817c219a2d4a24eac38"
+									],
+									"query": [
+										{
+											"key": "key",
+											"value": "{{key}}"
+										},
+										{
+											"key": "token",
+											"value": "{{token}}"
+										}
+									]
+								}
 							},
 							"response": []
 						},
 						{
 							"name": "update card (invalid token)",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "8a1b53f6-5a7b-4da5-a822-f895e5b0f2e8",
+										"exec": [
+											"pm.test(\"check status code\", function() {",
+											"    pm.response.to.have.status(401);",
+											"});"
+										],
+										"type": "text/javascript",
+										"packages": {},
+										"requests": {}
+									}
+								}
+							],
 							"id": "50381953-b9a37607-f3c7-4d38-ad13-d63b1c92fb30",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
 							"request": {
-								"method": "GET",
-								"header": []
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "https://api.trello.com/1/cards/693c3817c219a2d4a24eac38?key={{key}}",
+									"protocol": "https",
+									"host": [
+										"api",
+										"trello",
+										"com"
+									],
+									"path": [
+										"1",
+										"cards",
+										"693c3817c219a2d4a24eac38"
+									],
+									"query": [
+										{
+											"key": "key",
+											"value": "{{key}}"
+										},
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"disabled": true
+										}
+									]
+								}
 							},
 							"response": []
 						},
 						{
 							"name": "update a board (invalid board Id)",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "1a00bf7d-da5a-485f-a02a-ea61cadcea51",
+										"exec": [
+											"pm.test (\"check status code\", function() {",
+											"    pm.response.to.have.status(400)",
+											"});",
+											"",
+											"pm.test(\"Response time < 1000 ms)\", function () {",
+											"    pm.expect(pm.response.responseTime).to.be.below(1000);",
+											"});",
+											""
+										],
+										"type": "text/javascript",
+										"packages": {},
+										"requests": {}
+									}
+								}
+							],
 							"id": "50381953-83d9c700-16a3-48b2-8adf-12c9948532d6",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
 							"request": {
-								"method": "GET",
-								"header": []
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "https://api.trello.com/1/boards/null?key={{key}}&token={{token}}",
+									"protocol": "https",
+									"host": [
+										"api",
+										"trello",
+										"com"
+									],
+									"path": [
+										"1",
+										"boards",
+										"null"
+									],
+									"query": [
+										{
+											"key": "key",
+											"value": "{{key}}"
+										},
+										{
+											"key": "token",
+											"value": "{{token}}"
+										}
+									]
+								}
 							},
 							"response": []
 						}
