@@ -848,7 +848,20 @@
 			"item": [
 				{
 					"name": "Negative",
-					"item": [],
+					"item": [
+						{
+							"name": "update card Copy",
+							"id": "50381953-a67e563a-cac0-4023-b389-9b9307c55392",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						}
+					],
 					"id": "50381953-42b9757a-ec7f-4d1d-806a-1c172dd16937"
 				},
 				{
