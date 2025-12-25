@@ -914,6 +914,23 @@
 				}
 			],
 			"id": "50381953-be78e43e-c7fd-432d-8f0f-5af42f71591c"
+		},
+		{
+			"name": "Delete",
+			"item": [],
+			"id": "50381953-a5f63cec-bf2f-4893-a662-6374e7701b2f"
+		},
+		{
+			"name": "New Request",
+			"id": "50381953-42dcda20-4145-42c8-8075-53b00e74ea48",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
 		}
 	]
 }
