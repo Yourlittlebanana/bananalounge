@@ -850,7 +850,7 @@
 					"name": "Negative",
 					"item": [
 						{
-							"name": "update card Copy",
+							"name": "update card (invalid boardId)",
 							"id": "50381953-a67e563a-cac0-4023-b389-9b9307c55392",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
